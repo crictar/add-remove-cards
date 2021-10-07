@@ -1,0 +1,82 @@
+:root{
+    font-family: "Red Hat Display", sans-serif;
+    /* Primary color*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* Neutral colors*/
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --a-color: hsl(228, 45%, 44%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Pale-blue);
+}
+.payment-card{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 60px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+}
+.payment-card header img{
+    height: 148px;
+    width: 100%;
+}
+.plan{
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-content: center;
+    margin: 8px 20px 24px 20px;
+    padding: 12px;
+}
+main{
+    text-align: center;
+}
+main h1{
+    font-weight: 900;
+}
+main p{
+    margin: 0 24px;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 24px 24px
+}
+.button-container > button{
+    height: 40px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    border: none;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 900;
+}
+.button-container_payment{
+    background-color: var(--Bright-blue); 
+    color: var(--Very-pale-blue);
+}
+.button-container_cancel{
+    background-color: var(--Very-pale-blue); 
+    color: var(--Desaturated-blue);
+}
+.plan_type-plan :nth-child(1){
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+.plan :nth-child(3){
+    color: var(--a-color);
+    align-items: center;
+}
+.plan_type-plan :nth-child(2){
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
