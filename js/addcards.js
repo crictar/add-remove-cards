@@ -27,7 +27,9 @@ const createCardNode = ()=>{
     tipo.className = "plan_type-plan"
     const anualPlan = document.createElement("span")
     const textPlan = document.createTextNode('Annual Plan')
+    const enter = document.createElement("br")
     anualPlan.appendChild(textPlan)
+    anualPlan.appendChild(enter)
     const year = document.createElement("span")
     const textYear = document.createTextNode('$59.99/year')
     year.appendChild(textYear)
@@ -43,12 +45,24 @@ const createCardNode = ()=>{
     plan.appendChild(tipo)
     plan.appendChild(change)
 
+    const botones = document.createElement("section")
+    botones.className= "button-container"
+    const botonPayment = document.createElement("button")
+    botonPayment.className="button-container_payment";
+    const botonPText = document.createTextNode('Proceed to Payment')
+    botonPayment.appendChild(botonPText)
+    const botonCancel = document.createElement("button")
+    botonCancel.className = "button-container_cancel"
+    const botonCText = document.createTextNode('Cancel Order')
+    botonCancel.appendChild(botonCText)
+    botones.appendChild(botonPayment)
+    botones.appendChild(botonCancel)
     
-
     carta.appendChild(hero)
     carta.appendChild(titulo)
     carta.appendChild(parrafo)
     carta.appendChild(plan)
+    carta.appendChild(botones)
     return carta
 }
 const mountNode = document.querySelector("#app")
