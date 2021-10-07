@@ -15,15 +15,32 @@ body{
     box-sizing: border-box;
     background-color: var(--Pale-blue);
 }
+.buttons{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btn{
+    border: 1px solid white;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px 10px 20px 10px;
+}
 .payment-card{
     width: 85%;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 20px;
     overflow: hidden;
     border-radius: 20px;
     background-color: white;
+    max-width: 320px;
 }
-.payment-card header img{
+.btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.payment-card-hero{
     height: 148px;
     width: 100%;
 }
