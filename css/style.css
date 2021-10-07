@@ -12,6 +12,7 @@
 body{
     margin: 0;
     padding: 0;
+    text-align: center;
     box-sizing: border-box;
     background-color: var(--Pale-blue);
 }
@@ -52,9 +53,6 @@ body{
     align-content: center;
     margin: 8px 20px 24px 20px;
     padding: 12px;
-}
-main{
-    text-align: center;
 }
 main h1{
     font-weight: 900;
